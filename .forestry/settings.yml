@@ -5,17 +5,9 @@ admin_path: ''
 webhook_url: 
 sections:
 - type: document
-  path: content/data
-  label: Product
-- type: document
-  path: content/data
-  label: Article
-- type: heading
-  label: My nav
-- type: heading
-  label: Test
-- type: heading
-  label: Content
+  path: home
+  label: Home Page
+  match: "**/*"
 upload_dir: content/images
 public_path: "/content/images"
 front_matter_path: ''
