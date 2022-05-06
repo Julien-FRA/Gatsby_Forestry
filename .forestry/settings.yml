@@ -7,14 +7,10 @@ sections:
 - type: directory
   path: home
   label: First Home
-  create: none
+  create: all
   match: "**/*"
   templates:
   - home-page
-- type: document
-  path: home
-  label: Home Page
-  match: "**/*"
 upload_dir: content/images
 public_path: "/content/images"
 front_matter_path: ''
