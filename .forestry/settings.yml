@@ -4,6 +4,13 @@ auto_deploy: false
 admin_path: ''
 webhook_url: 
 sections:
+- type: directory
+  path: home
+  label: First Home
+  create: none
+  match: "**/*"
+  templates:
+  - home-page
 - type: document
   path: home
   label: Home Page
