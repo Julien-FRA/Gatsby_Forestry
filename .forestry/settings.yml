@@ -5,7 +5,7 @@ admin_path: ''
 webhook_url: 
 sections:
 - type: directory
-  path: home
+  path: content/home
   label: First Home
   create: all
   match: "**/*"
