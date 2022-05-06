@@ -7,11 +7,9 @@ sections:
 - type: document
   path: content/data
   label: Product
-  match: "**/*"
 - type: document
   path: content/data
   label: Article
-  match: "**/*"
 - type: heading
   label: My nav
 - type: heading
