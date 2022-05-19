@@ -21,6 +21,3 @@ fields:
     schema:
       format: markdown
   label: Text Content
-pages:
-- content/home/home.md
-- content/home/testPage.md
