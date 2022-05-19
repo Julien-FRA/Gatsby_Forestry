@@ -1,4 +1,4 @@
-import { graphql, useStaticQuery } from "gatsby"
+import { graphql, useStaticQuery } from 'gatsby';
 
 export default function useHomeData() {
   const data = useStaticQuery(graphql`
@@ -8,15 +8,15 @@ export default function useHomeData() {
           node {
             id
             frontmatter {
-              title_content
-              text_content
               bg_image {
                 childImageSharp {
-                  fluid( maxWidth: 800 ) {
+                  fluid(maxWidth: 800) {
                     ...GatsbyImageSharpFluid
                   }
                 }
               }
+              title_content
+              text_content
             }
             excerpt(pruneLength: 200)
             fields {
@@ -26,7 +26,7 @@ export default function useHomeData() {
         }
       }
     }
-  `)
+  `);
   console.log(data);
-  return data.allMarkdownRemark.edges
+  return data.allMarkdownRemark.edges;
 }
